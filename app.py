@@ -27,7 +27,7 @@ logging.basicConfig(
 # ====================================================================
 
 # ⚠️ يجب استبدال التوكن بـ Telegram Bot Token الخاص بك
-TOKEN = '7830176312:AAHnNNS71YQxesQhWRqPKp8S8dPpEUtyUqw' # ❌ يجب تغيير هذا الرمز
+TOKEN = '8536225839:AAHW8e5ZZfCMgGjA2ZoG-iGZkDJTllq_doM' # ❌ يجب تغيير هذا الرمز
 DB_NAME = 'housing_complex.db' 
 HOUSING_DATA_FILE = 'housing_data.json' 
 CONFIG_FILE = 'bot_config.json' # ملف جديد لحفظ إعدادات البوت
