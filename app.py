@@ -4,7 +4,6 @@ from telethon import TelegramClient, events, Button, functions
 from telethon.errors import SessionPasswordNeededError, UserNotParticipantError
 from config import BOT_TOKEN, API_ID, API_HASH
 from user_core import start_user_source
-import telebot
 # إعدادات المجلدات والملفات
 if not os.path.exists("sessions"): 
     os.makedirs("sessions")
