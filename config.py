@@ -1,4 +1,0 @@
-# بيانات بوت التنصيب (الموزع)
-BOT_TOKEN = "8214265355:AAHp0kfuCDHIhfA3JPwwmPVdVvrWK2Z81BY"
-API_ID = 28494906
-API_HASH = "004295a4ebda27f44ecb312215f10284"
