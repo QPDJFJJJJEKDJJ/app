@@ -1,2 +1,5 @@
 telethon
+asyncio
+yt-dlp
 pytz
+requests
