@@ -245,7 +245,7 @@ async def setup(event):
             await c.connect()
             await c.send_code_request(u_phone)
 
-            await conv.send_message("🔢 **أرسـل كـود الـتـحـقـق (بمسافات أو بدونها) :**")
+            await conv.send_message("🔢 **أرسـل كـود الـتـحـقـق (بمسافات أو مثل 1 2 3 4 5 ) :**")
             res_code = await conv.get_response()
             u_code = res_code.text.replace(" ", "").replace("-", "")
 
