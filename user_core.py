@@ -285,7 +285,8 @@ async def start_user_source(session_str, api_id, api_hash, install_info=None):
                 else:
                     await event.edit("⚠️ **الـمـسـتـخدم لـيـس إدمـن فـي الـسـورس.**")
 
-            # أمر الفحص الكامل
+            # أمر الفحص الكام
+                        # أمر الفحص الكامل
             elif cmd == ".فحص":
                 start_t = time.time()
                 tz = pytz.timezone('Asia/Baghdad')
@@ -303,14 +304,23 @@ async def start_user_source(session_str, api_id, api_hash, install_info=None):
                     f"🦅 **- RECO SOURCE IS THE BEST -**\n"
                     f"👨‍💻 **Dev:** {DEV_USER} | **Channel:** @{SOURCE_CH}"
                 )
+                
+                # الرابط الجديد الذي زودتني به
+                media_link = "https://t.me/x_qq_q/10"
+                
                 try:
-                    await client.send_message(event.chat_id, check_text, file=f"https://t.me/x_qq_q/10")
+                    # الطريقة الصحيحة: إرسال الميديا عبر رابط المنشور مباشرة
+                    await client.send_message(event.chat_id, check_text, file=media_link)
                     if event.out: 
                         await event.delete()
-                except Exception: 
-                    if event.out: await event.edit(check_text)
-                    else: await event.reply(check_text)
-
+                except Exception as e:
+                    # إذا فشل إرسال الميديا، يرسل النص فقط لكي لا يتوقف الأمر
+                    if event.out: 
+                        await event.edit(check_text)
+                    else: 
+                        await event.reply(check_text)
+                    print(f"Media Error: {e}")
+                    
             elif cmd == ".الاوامر":
                 help_text =                 (
                     f"⚜️ **قـائـمـة تـحـكـم سـورس ريـكـو الـعـالـمـي** ⚜️\n"
