@@ -304,7 +304,7 @@ async def start_user_source(session_str, api_id, api_hash, install_info=None):
                     f"👨‍💻 **Dev:** {DEV_USER} | **Channel:** @{SOURCE_CH}"
                 )
                 try:
-                    await client.send_message(event.chat_id, check_text, file=f"https://t.me/SORS_RECO/4")
+                    await client.send_message(event.chat_id, check_text, file=f"https://t.me/x_qq_q/10")
                     if event.out: 
                         await event.delete()
                 except Exception: 
